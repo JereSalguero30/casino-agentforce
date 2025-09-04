@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Casino Buenos Aires — Casino Online</title>
+  <meta name="description" content="Viví la emoción del casino online: slots, ruleta, blackjack y casino en vivo. Promociones exclusivas." />
+  <link rel="preconnect" href="https://casinobsas.my.site.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__row">
+      <h1 class="logo">Casino Buenos Aires</h1>
+
+      <nav class="nav">
+        <a href="#casino" class="nav__link">Casino</a>
+        <a href="#slots" class="nav__link">Slots</a>
+        <a href="#live" class="nav__link">Casino en Vivo</a>
+        <a href="#promos" class="nav__link">Promociones</a>
+      </nav>
+
+      <div class="header__cta">
+        <button class="btn btn--ghost">Ingresar</button>
+        <button class="btn btn--primary">Registrarse</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="casino" aria-label="Casino online">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <h2 class="hero__title">¡Viví la emoción del casino online!</h2>
+      <p class="hero__subtitle">
+        Descubrí la mejor experiencia de casino online en Argentina con cientos de juegos,
+        slots y casino en vivo.
+      </p>
+      <a href="#promos" class="btn btn--primary btn--lg">Registrate y jugá ahora</a>
+    </div>
+  </section>
+
+  <!-- Juegos destacados -->
+  <section class="section section--dark" id="slots" aria-labelledby="heading-destacados">
+    <div class="container">
+      <h3 class="section__title" id="heading-destacados">Juegos Destacados</h3>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card__image" role="img" aria-label="Slot Aventura"></div>
+          <div class="card__body">
+            <h4 class="card__title">Slot Aventura</h4>
+            <button class="btn btn--primary btn--sm">Jugar ahora</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card__image" role="img" aria-label="Ruleta en Vivo"></div>
+          <div class="card__body">
+            <h4 class="card__title">Ruleta en Vivo</h4>
+            <button class="btn btn--primary btn--sm">Jugar ahora</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card__image" role="img" aria-label="Blackjack Premium"></div>
+          <div class="card__body">
+            <h4 class="card__title">Blackjack Premium</h4>
+            <button class="btn btn--primary btn--sm">Jugar ahora</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promociones -->
+  <section class="section" id="promos" aria-labelledby="heading-promos">
+    <div class="container">
+      <h3 class="section__title" id="heading-promos">Promociones Exclusivas</h3>
+
+      <div class="promos">
+        <article class="promo promo--highlight">
+          <div class="promo__content">
+            <h4 class="promo__title">Bono de Bienvenida 100%</h4>
+            <p class="promo__text">
+              Duplicá tu primer depósito y empezá a jugar con el doble de fichas.
+            </p>
+            <button class="btn btn--dark">Aprovechar</button>
+          </div>
+        </article>
+
+        <article class="promo">
+          <div class="promo__content">
+            <h4 class="promo__title">Tiradas Gratis Semanales</h4>
+            <p class="promo__text">
+              Accedé a giros gratis todas las semanas en tus slots favoritas.
+            </p>
+            <button class="btn btn--primary">Activar</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__content">
+      <p class="footer__copy">© 2025 Casino Buenos Aires. Todos los derechos reservados.</p>
+      <p class="footer__legal">El juego compulsivo es perjudicial para la salud. Jugar con responsabilidad. +18</p>
+    </div>
+  </footer>
+
+  <!-- Embedded Messaging (Agentforce) -->
+  <script type="text/javascript">
+    function initEmbeddedMessaging() {
+      try {
+        embeddedservice_bootstrap.settings.language = 'es_MX'; // ajustá si necesitás 'es-AR'
+        embeddedservice_bootstrap.init(
+          '00D8c000004fIEw',
+          'Casino_BA_Agentforce',
+          'https://casinobsas.my.site.com/ESWCasinoBAAgentforce1757016226568',
+          { scrt2URL: 'https://casinobsas.my.salesforce-scrt.com' }
+        );
+      } catch (err) {
+        console.error('Error loading Embedded Messaging: ', err);
+      }
+    }
+  </script>
+  <script
+    type="text/javascript"
+    src="https://casinobsas.my.site.com/ESWCasinoBAAgentforce1757016226568/assets/js/bootstrap.min.js"
+    onload="initEmbeddedMessaging()"
+  ></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+:root{
+  --bg-900:#0b0f19;
+  --bg-950:#0a0d14;
+  --black:#000;
+  --white:#fff;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --primary:#facc15; /* amarillo */
+  --primary-900:#a16207;
+  --surface:#111827; /* gris + oscuro */
+  --surface-2:#1f2937; /* gris */
+  --card:#1f2937;
+  --border:#1f2937;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: linear-gradient(to bottom, #111827, #000);
+  color: var(--text);
+}
+
+/* Utilities */
+.container{max-width:1120px;margin-inline:auto;padding-inline:1.25rem}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  border:none;border-radius:12px;cursor:pointer;
+  padding:.75rem 1rem;font-weight:600;transition:filter .2s ease, transform .05s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn--primary{background:var(--primary);color:#111827}
+.btn--primary:hover{filter:brightness(1.03)}
+.btn--dark{background:#111827;color:#fff}
+.btn--dark:hover{filter:brightness(1.1)}
+.btn--ghost{background:transparent;color:#fff;border:1px solid #374151}
+.btn--ghost:hover{background:#0b1220}
+.btn--sm{padding:.55rem .9rem;font-size:.95rem}
+.btn--lg{padding:1rem 1.5rem;font-size:1.125rem;border-radius:16px}
+
+/* Header */
+.header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(0,0,0,.6);backdrop-filter:saturate(140%) blur(8px);
+  border-bottom:1px solid #1f2937;
+}
+.header__row{display:flex;align-items:center;justify-content:space-between;padding-block:1rem}
+.logo{font-size:1.35rem;margin:0;font-weight:800;color:#fff}
+.nav{display:flex;gap:1.25rem}
+.nav__link{color:#d1d5db;text-decoration:none;font-weight:500}
+.nav__link:hover{color:var(--primary)}
+.header__cta{display:flex;gap:.75rem}
+
+/* Hero */
+.hero{
+  position:relative;isolation:isolate;
+  min-height:68vh;display:grid;place-items:center;text-align:center;
+  background-image:url("casino-bg.jpg"); /* reemplazá por tu imagen */
+  background-size:cover;background-position:center;
+}
+.hero__overlay{
+  position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.75));
+  z-index:0;
+}
+.hero__content{position:relative;z-index:1;padding:3rem 1rem}
+.hero__title{font-size:clamp(2rem,5vw,3.25rem);margin:0 0 .75rem 0;font-weight:900;color:#fff}
+.hero__subtitle{max-width:52ch;margin:0 auto 1.25rem auto;color:#e5e7eb;font-size:1.05rem}
+
+/* Sections */
+.section{padding:4rem 0;background:#0a0d14}
+.section--dark{background:#0b0f19}
+.section__title{font-size:2rem;font-weight:800;text-align:center;margin:0 0 2rem 0}
+
+/* Grid of cards */
+.grid{
+  display:grid;gap:1.25rem;
+  grid-template-columns:repeat(1, minmax(0,1fr));
+}
+@media (min-width:768px){
+  .grid{grid-template-columns:repeat(3, minmax(0,1fr))}
+}
+.card{
+  background:var(--card);border:1px solid #243244;
+  border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.25);
+  display:flex;flex-direction:column;
+}
+.card__image{
+  background:linear-gradient(135deg,#243b55,#141e30);
+  height:10rem;
+}
+.card__body{padding:1rem;display:flex;flex-direction:column;gap:.75rem;align-items:flex-start}
+.card__title{margin:0;font-size:1.125rem;font-weight:700;color:#fff}
+
+/* Promos */
+.promos{
+  display:grid;gap:1.25rem;
+  grid-template-columns:repeat(1, minmax(0,1fr));
+}
+@media (min-width:768px){
+  .promos{grid-template-columns:repeat(2, minmax(0,1fr))}
+}
+.promo{
+  background:#1f2937;color:#fff;border:1px solid #243244;border-radius:16px;padding:1rem 1.25rem;
+}
+.promo--highlight{background:var(--primary);color:#111827;border-color:#111827}
+.promo__title{margin:.25rem 0  .5rem 0;font-size:1.5rem;font-weight:800}
+.promo__text{margin:0 0 1rem 0;color:inherit}
+
+/* Footer */
+.footer{border-top:1px solid #1f2937;background:#000;padding:2rem 0;text-align:center}
+.footer__copy{margin:0 0 .5rem 0;color:#9ca3af}
+.footer__legal{margin:0;color:#6b7280;font-size:.9rem}
