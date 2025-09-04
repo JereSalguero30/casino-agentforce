@@ -133,6 +133,16 @@
 	};
 </script>
 <script type='text/javascript' src='https://casinobsas.my.site.com/ESWCasinoBAAgentforce1757016226568/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script>
+  window.addEventListener("error", (e) => console.log("JS error:", e.message));
+  window.addEventListener("load", () => {
+    console.log("Page loaded");
+    console.log("bootstrap present?", !!window.embeddedservice_bootstrap);
+  });
+  document.addEventListener("onEmbeddedMessagingReady", () => {
+    console.log("Embedded Messaging READY");
+  });
+</script>
 
 </body>
 </html>
