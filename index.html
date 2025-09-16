@@ -119,23 +119,5 @@
 
 
 </body>
-<script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'es_MX'; // For example, enter 'en' or 'en-US'
 
-			embeddedservice_bootstrap.init(
-				'00D8c000004fIEw',
-				'Casino_BA_Agentforce',
-				'https://casinobsas.my.site.com/ESWCasinoBAAgentforce1757016226568',
-				{
-					scrt2URL: 'https://casinobsas.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://casinobsas.my.site.com/ESWCasinoBAAgentforce1757016226568/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </html>
