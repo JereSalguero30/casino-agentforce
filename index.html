@@ -118,9 +118,12 @@
 
 
 </body>
+
 <script type='text/javascript'>
+  
 	function initEmbeddedMessaging() {
 		try {
+      console.log('Initializing Embedded Messaging...');
 			embeddedservice_bootstrap.settings.language = 'es_MX'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
@@ -131,6 +134,7 @@
 					scrt2URL: 'https://casinobsas.my.salesforce-scrt.com'
 				}
 			);
+      console.log('Embedded Messaging initialized.');
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
